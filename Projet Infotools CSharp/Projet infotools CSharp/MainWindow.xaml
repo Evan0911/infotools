@@ -1,0 +1,24 @@
+﻿<Window x:Class="Projet_infotools_CSharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_infotools_CSharp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="340.375" Width="799.409">
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="189" Margin="553,98,0,0"/>
+        <TextBox x:Name="TxtIdentifiant" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293" Margin="176,122,0,0" FontSize="18" FontFamily="Arial" BorderThickness="1" TextChanged="TxtIdentifiant_TextChanged" />
+        <Label Content="Identifiant" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,122,0,0" Height="38" Width="155" FontSize="24" FontWeight="Bold" FontFamily="Arial"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,173,0,0" Height="38" Width="166" FontSize="24" FontWeight="Bold" FontFamily="Arial"/>
+        <Button x:Name="BtnConnecter" Content="Se connecter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="332,238,0,0" Height="32" FontSize="14" FontWeight="Bold" Click="BtnConnecter_Click" />
+        <Label Content="Mot de passe oublié ?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="565,118,0,0" FontSize="16"/>
+        <Button x:Name="BtnMdpOublié" Content="Cliquer ici" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="601,154,0,0" Height="32" FontSize="14" FontWeight="Bold" Click="BtnMdpOublié_Click" />
+        <Button x:Name="BtnQuitter" Content="Quitter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="655,241,0,0" Height="29" Click="BtnQuitter_Click"/>
+        <PasswordBox x:Name="Psw" MaxLength="20" PasswordChar="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,185,0,0" Width="293" Height="26" FontSize="16"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="Projet_infotools_CSharp.FenetreCommerciaux"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_infotools_CSharp"
+        mc:Ignorable="d"
+        Title="FenetreCommerciaux" Height="649.929" Width="971">
+    <Grid>
+        <Button x:Name="BtnAjouter" Content="Ajouter client" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="838,39,0,0" Click="BtnAjouter_Click" Height="34"/>
+        <Button x:Name="BtnModifier" Content="Modifier client" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="838,158,0,0" Height="34" Click="BtnModifier_Click"/>
+        <Button x:Name="BtnSupprimer" Content="Supprimer client" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="838,270,0,0" Height="34" Click="BtnSupprimer_Click"/>
+        <TextBox x:Name="TxtNom" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="123,103,0,0"/>
+        <TextBox x:Name="TxtPrenom" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="356,103,0,0"/>
+        <TextBox x:Name="TxtMail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="578,111,0,0"/>
+        <Label Content="Nom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,72,0,0"/>
+        <Label Content="Prenom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,72,0,0"/>
+        <Label Content="Adresse mail" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="578,80,0,0"/>
+        <DataGrid x:Name="DtgCom" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,312,161,43" SelectionChanged="DTG_SelectionChanged" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Numéro"  Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding nom}" />
+                <DataGridTextColumn Header="Prénom"  Binding="{Binding prenom}"/>
+                <DataGridTextColumn Header="Adresse" Binding="{Binding adresse}" />
+                <DataGridTextColumn Header="Code postal" Binding="{Binding cp}" />
+                <DataGridTextColumn Header="Ville" Binding="{Binding ville}" />
+                <DataGridHyperlinkColumn Header="Email" Binding="{Binding email}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="TxtAdresse" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="123,189,0,0"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,158,0,0"/>
+        <TextBox x:Name="TxtCP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="356,189,0,0"/>
+        <Label Content="Code postal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,158,0,0"/>
+        <TextBox x:Name="TxtVille" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="578,189,0,0"/>
+        <Label Content="Ville" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="578,158,0,0"/>
+        <TextBox x:Name="TxtMdp" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="123,264,0,0"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,233,0,0"/>
+    </Grid>
+</Window>

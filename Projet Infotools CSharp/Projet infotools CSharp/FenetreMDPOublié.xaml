@@ -1,0 +1,21 @@
+﻿<Window x:Class="Projet_infotools_CSharp.FenêtreMDPOublié"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_infotools_CSharp"
+        mc:Ignorable="d"
+        Title="FenêtreMDPOublié" Height="450" Width="800">
+    <Grid>
+        <Label Content="Mot de passe oublié" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="172,0,0,304" Height="89" Width="451" FontSize="48"/>
+        <Label Content="Nouveau mot de passe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,222,0,0" FontSize="22"/>
+        <Label Content="Confirmer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="137,266,0,0" FontSize="22" RenderTransformOrigin="1.063,0.462"/>
+        <PasswordBox x:Name="PSW1" MaxLength="20" PasswordChar="*" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="167" Margin="296,233,0,0"/>
+        <PasswordBox x:Name="PSW2" MaxLength="20" PasswordChar="*" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="167" Margin="296,277,0,0"/>
+        <Button x:Name="BtnConfirmer" Content="Confirmer &#xD;&#xA;les modifications" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="296,345,0,0" Height="64" FontSize="14" FontWeight="Bold" Click="BtnConfirmer_Click"/>
+        <Button Content="Retour" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="584,370,0,0" Height="39" FontSize="20" Click="Button_Click"/>
+        <TextBox x:Name="TxtIdentifiant" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167" Margin="296,179,0,0" TextChanged="TxtIdentifiant_TextChanged"/>
+        <Label Content="Identifiant" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,178,0,0" FontSize="22"/>
+
+    </Grid>
+</Window>
